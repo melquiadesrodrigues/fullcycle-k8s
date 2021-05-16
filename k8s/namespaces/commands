@@ -1,0 +1,27 @@
+- create namespace:
+
+kubectl create ns <namespace>
+
+- aplly with namespace
+
+kubectl aplly -f <file.yaml> -n=<namespace>
+
+- show file config
+
+cat ~/.kube/config
+
+- show config
+
+kubectl config view
+
+- show current context
+
+kubectl config current-context
+
+- create context to namespace
+
+kubectl config set-context <context> --namespace=<namespace> --cluster=<cluster> --user=<user>
+
+- use context
+
+kubectl config use-context <context>
